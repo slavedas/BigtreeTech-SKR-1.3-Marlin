@@ -79,6 +79,12 @@
   #define E1_CS_PIN        P1_01
 #endif
 
+#ifdef PSU_CONTROL
+#define SERVO3_PIN -1
+#undef PS_ON_PIN
+#define PS_ON_PIN P1_28
+#endif
+
 //
 // Software SPI pins for TMC2130 stepper drivers
 //
